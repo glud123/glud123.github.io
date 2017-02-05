@@ -1686,7 +1686,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0a63f0;
+  background: #61a345;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2849,4 +2849,18 @@ a.search-result {
   .post-body {
     text-align: justify;
   }
+}
+.site-nav-toggle {
+  left: 20px;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(55%);
+  -moz-transform: translateY(55%);
+  -ms-transform: translateY(55%);
+  -o-transform: translateY(55%);
+  transform: translateY(55%);
 }
