@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[git在mac中自动补全功能配置]]></title>
+      <url>%2F2017%2F01%2F25%2Fgit%E5%9C%A8mac%E4%B8%AD%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE%2F</url>
+      <content type="text"><![CDATA[ps: 在 MAC 中使用自带的命令行工具来操作git很不方便，没有提示对于我这种英语渣渣的人来说简直是不能接受。 话不多说直接走起 首先使用 $ brew list 命令来查看你是否已经安装了bash-completion ，如果没有继续向下进行，有的跳过下一步。 接下来安装 bash-completion ，执行以下命令： $ brew install bash-completion 安装完成之后运行 $ brew info bash-completion 在最下方会出现 ==&gt; Caveats Add the following lines to your ~/.bash_profile: if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 这个是已经配置好的，正常的是没有if…then…这段的。 这时候我们需要在当前用户根目录（即 ~/ 目录）下创建一个 .bash_profile 文件（即创建路径为 ~/.bash_profile ），接下来将 if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 添加到 .bash_profile 文件内。 注意：最好不要直接复制。如果复制的话，代码中的换行位置需要重新输入。否则最后会报错！安装完 bash-completion 重启终端命令行工具，继续一下步骤。 然后将 Git 源码中的 completion.bash 源码clone到本地 $ git clone https://github.com/markgandolfo/git-bash-completion 在下载的git-bash-completion文件夹中，找到git-bash-completion文件夹中的git-bash-completion文件。将此文件重名为.git-bash-completion（目的是将此文件隐藏在用户跟目录中，防止意外将其删除）。如果重命名不成功，可以通过 $ vi .git-bash-completion 命令在用户跟目录下进行创建，然后通过编辑器将git-bash-completion文件中的内容复制到.git-bash-completion文件中。 之后，在用户跟目录下创建.bashrc文件，此文件也可以通过 $ vi .bashrc 命令进行创建，其内容如下： source ~/.git-completion.bashrc 然后保存。 配置都已完成，重启终端命令行工具即可。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[开篇记]]></title>
+      <url>%2F2017%2F01%2F01%2F%E5%BC%80%E7%AF%87%E8%AE%B0%2F</url>
+      <content type="text"><![CDATA[开篇 在新年的第一天决定，2017需要改变一下自己的学习方法，进而通过这种方式来记录自己在前端学习路上的所见、所学、所感。 目标 掌握Markdown语法，更好的为自己服务。 会简单介绍一下自己在此博客创建过程中走过的坑，方便他人亦是方便自己。 学习Vue.js 向往这种简单、优雅的框架。 感受一下weex 的魅力，以后的项目中很有可能会用的上，阿里还是很强大的。 当然也要学习现在最流行的前端项目整合工具-webpack 。 在工作项目中遇到的问题，与解决问题方法的记录。 待续 现在只想到这么多，这里只是给自己在今年做一个简单的计划，方便自己理清学习思路。]]></content>
+    </entry>
+
+    
+  
+  
+</search>
