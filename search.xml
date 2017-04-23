@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[jsonp跨域]]></title>
+      <url>%2F2017%2F04%2F23%2Fjsonp%2F</url>
+      <content type="text"><![CDATA[两个网站要共享数据jsonp 为跨域的最常见的手段（不能发送数据，只支持get请求）ajax会有限制问题，会出现不允许访问。jsonp,cros,postMessage(iframe),websocket; jsonp:scritp 不会导致跨域问题，我的网站引用你的网站的js,img,css,不用img和css的原因是默认会被转成图片和样式，img常用作记录访问页面的次数，统计请求这样图片的次数。 jsonp是通过src跨域的，并且只支持get请求。 由于src没有访问限制，可以通过src引用其他网站的数据（此网站必须通过这样的接口） cros 让被访问的服务器 允许跨域即可 （需要服务端支持） iftame 跨域 html5 提供的API websocket html5 提供的APIjsonp 的原理 1.在当前js中声明一个全局函数function fn(){} 2.动态创建script标签通过script 标签引用其他网址并且将这个全局函数名字传递给后台 1&lt;script src =&quot;http://localhost:3000/getuser?callback=fn&quot;&gt; 3.后台返回函数执行fn(&#39;{name:1}&#39;);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[WebStorm搭建本地授权服务]]></title>
       <url>%2F2017%2F02%2F09%2FWebStorm%E3%80%81PhpStorm%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%2F</url>
       <content type="text"><![CDATA[本地搭建各种storm License Server ,建立自己的本地授权服务器。告别那些恶心的注册码。 适用情况：理论上支持所有Jetbrains产品，截止到目前所有版本都可正常激活。1、下载下面的文件链接地址： http://ol31uv24o.bkt.clouddn.com/IDEALicenseServer.zip 2、解压文件，找到自己的操作版本。以下使用windows64位系统做示例。找到 双击运行 IntelliJIDEALicenseServer_windows_amd64.exe 3、之前如果通过其他方式注册的，可以在 WebStorm 中的 Helep 选项下 Register… 选项中进行重新注册。 4、在注册界面选择 License server 授权服务器，填写 http://127.0.0.1:41017,然后点击 “Activate” ,如下图]]></content>
