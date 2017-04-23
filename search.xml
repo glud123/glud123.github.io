@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[WebStorm搭建本地授权服务]]></title>
+      <url>%2F2017%2F02%2F09%2FWebStorm%E3%80%81PhpStorm%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%2F</url>
+      <content type="text"><![CDATA[本地搭建各种storm License Server ,建立自己的本地授权服务器。告别那些恶心的注册码。 适用情况：理论上支持所有Jetbrains产品，截止到目前所有版本都可正常激活。1、下载下面的文件链接地址： http://ol31uv24o.bkt.clouddn.com/IDEALicenseServer.zip 2、解压文件，找到自己的操作版本。以下使用windows64位系统做示例。找到 双击运行 IntelliJIDEALicenseServer_windows_amd64.exe 3、之前如果通过其他方式注册的，可以在 WebStorm 中的 Helep 选项下 Register… 选项中进行重新注册。 4、在注册界面选择 License server 授权服务器，填写 http://127.0.0.1:41017,然后点击 “Activate” ,如下图]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git在mac中自动补全功能配置]]></title>
       <url>%2F2017%2F01%2F25%2Fgit%E5%9C%A8mac%E4%B8%AD%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E5%8A%9F%E8%83%BD%E9%85%8D%E7%BD%AE%2F</url>
-      <content type="text"><![CDATA[ps: 在 MAC 中使用自带的命令行工具来操作git很不方便，没有提示对于我这种英语渣渣的人来说简直是不能接受。 话不多说直接走起 首先使用 $ brew list 命令来查看你是否已经安装了bash-completion ，如果没有继续向下进行，有的跳过下一步。 接下来安装 bash-completion ，执行以下命令： $ brew install bash-completion 安装完成之后运行 $ brew info bash-completion 在最下方会出现 ==&gt; Caveats Add the following lines to your ~/.bash_profile: if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 这个是已经配置好的，正常的是没有if…then…这段的。 这时候我们需要在当前用户根目录（即 ~/ 目录）下创建一个 .bash_profile 文件（即创建路径为 ~/.bash_profile ），接下来将 if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 添加到 .bash_profile 文件内。 注意：最好不要直接复制。如果复制的话，代码中的换行位置需要重新输入。否则最后会报错！安装完 bash-completion 重启终端命令行工具，继续一下步骤。 然后将 Git 源码中的 completion.bash 源码clone到本地 $ git clone https://github.com/markgandolfo/git-bash-completion 在下载的git-bash-completion文件夹中，找到git-bash-completion文件夹中的git-bash-completion文件。将此文件重名为.git-bash-completion（目的是将此文件隐藏在用户跟目录中，防止意外将其删除）。如果重命名不成功，可以通过 $ vi .git-bash-completion 命令在用户跟目录下进行创建，然后通过编辑器将git-bash-completion文件中的内容复制到.git-bash-completion文件中。 之后，在用户跟目录下创建.bashrc文件，此文件也可以通过 $ vi .bashrc 命令进行创建，其内容如下： source ~/.git-completion.bashrc 然后保存。 配置都已完成，重启终端命令行工具即可。]]></content>
+      <content type="text"><![CDATA[ps:在 MAC 中使用自带的命令行工具来操作git很不方便，没有提示对于我这种英语渣渣的人来说简直是不能接受。 话不多说直接走起 首先使用 $ brew list 命令来查看你是否已经安装了bash-completion ，如果没有继续向下进行，有的跳过下一步。 接下来安装 bash-completion ，执行以下命令： $ brew install bash-completion 安装完成之后运行 $ brew info bash-completion 在最下方会出现 ==&gt; Caveats Add the following lines to your ~/.bash_profile: if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 这个是已经配置好的，正常的是没有if…then…这段的。 这时候我们需要在当前用户根目录（即 ~/ 目录）下创建一个 .bash_profile 文件（即创建路径为 ~/.bash_profile ），接下来将 if [ -f $(brew --prefix)/etc/bash_completion ]; then . $(brew --prefix)/etc/bash_completion fi 添加到 .bash_profile 文件内。 注意：最好不要直接复制。如果复制的话，代码中的换行位置需要重新输入。否则最后会报错！安装完 bash-completion 重启终端命令行工具，继续一下步骤。 然后将 Git 源码中的 completion.bash 源码clone到本地 $ git clone https://github.com/markgandolfo/git-bash-completion 在下载的git-bash-completion文件夹中，找到git-bash-completion文件夹中的git-bash-completion文件。将此文件重名为.git-bash-completion（目的是将此文件隐藏在用户跟目录中，防止意外将其删除）。如果重命名不成功，可以通过 $ vi .git-bash-completion 命令在用户跟目录下进行创建，然后通过编辑器将git-bash-completion文件中的内容复制到.git-bash-completion文件中。 之后，在用户跟目录下创建.bashrc文件，此文件也可以通过 $ vi .bashrc 命令进行创建，其内容如下： source ~/.git-completion.bashrc 然后保存。 配置都已完成，重启终端命令行工具即可。]]></content>
     </entry>
 
     
