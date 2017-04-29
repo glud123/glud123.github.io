@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[git分支]]></title>
+      <url>%2F2017%2F04%2F29%2Fgit%E5%88%86%E6%94%AF%2F</url>
+      <content type="text"><![CDATA[查看当前git分支1git branch 创建分支1git branch &lt;分支名&gt; 切换分支1git checkout &lt;分支名&gt; 删除分支注：删除分支之前一定确定要删除的分支，不是当前所在分支，切换其他分支之后即可删除1git branch -D &lt;分支名&gt; 创建并切换指定分支1git checkout -b &lt;分支名&gt; 分支合并 用主干分支合并分支注：默认master是主干1git merge &lt;分支名&gt; 合并分支后 被合并的分支删除即可]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git文件回滚]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%E6%96%87%E4%BB%B6%E5%9B%9E%E6%BB%9A%2F</url>
       <content type="text"><![CDATA[跨过暂存区直接将本地文件提交到版本库如果执行过一次增加到版本库 git commit -a -m &quot;更新内容描述&quot; 从暂存区拉取历史文件 全部拉取回来 1git checkout . 拉取某一个文件 1git checkout &lt;文件名&gt; 从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &lt;版本号&gt; 查看所有操作的版本号1git reflog 搜索带有&lt;需要查询的关键字&gt;的版本号1git log --grep=&lt;需要查询的关键字&gt; 搜索&lt;作者/用户名&gt;提交的历史版本1git log --author=&lt;作者/用户名&gt; 加入暂存区后，返回上一次的添加 (删除本次的 add) 返回指定文件 1git reset HEAD &lt;文件名&gt; 返回所有文件 1git reset HEAD .]]></content>
