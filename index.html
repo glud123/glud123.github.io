@@ -403,6 +403,17 @@
 </li>
 </ul>
 <h2 id="从版本库将文件某一版本回滚到暂存区和工作区"><a href="#从版本库将文件某一版本回滚到暂存区和工作区" class="headerlink" title="从版本库将文件某一版本回滚到暂存区和工作区"></a>从版本库将文件某一版本回滚到暂存区和工作区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard &lt;版本号&gt;</div></pre></td></tr></table></figure>
+<h2 id="查看所有操作的版本号"><a href="#查看所有操作的版本号" class="headerlink" title="查看所有操作的版本号"></a>查看所有操作的版本号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reflog</div></pre></td></tr></table></figure>
+<h2 id="搜索带有-lt-需要查询的关键字-gt-的版本号"><a href="#搜索带有-lt-需要查询的关键字-gt-的版本号" class="headerlink" title="搜索带有&lt;需要查询的关键字&gt;的版本号"></a>搜索带有&lt;需要查询的关键字&gt;的版本号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --grep=&lt;需要查询的关键字&gt;</div></pre></td></tr></table></figure>
+<h2 id="搜索-lt-作者-用户名-gt-提交的历史版本"><a href="#搜索-lt-作者-用户名-gt-提交的历史版本" class="headerlink" title="搜索&lt;作者/用户名&gt;提交的历史版本"></a>搜索&lt;作者/用户名&gt;提交的历史版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --author=&lt;作者/用户名&gt;</div></pre></td></tr></table></figure>
+<h2 id="加入暂存区后，返回上一次的添加-删除本次的-add"><a href="#加入暂存区后，返回上一次的添加-删除本次的-add" class="headerlink" title="加入暂存区后，返回上一次的添加 (删除本次的 add)"></a>加入暂存区后，返回上一次的添加 (删除本次的 <code>add</code>)</h2><ul>
+<li><p>返回指定文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD &lt;文件名&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>返回所有文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD .</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
           
         

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git,前端笔记," />
+  <meta name="keywords" content="前端笔记,git," />
 
 
 
@@ -93,7 +93,8 @@
 1git checkout &amp;lt;文件名&amp;gt;
 
 
-从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;">
+从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;
+查看所有操作的版本号">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git文件回滚">
 <meta property="og:url" content="https://glud123.github.io/2017/04/29/git文件回滚/index.html">
@@ -107,8 +108,9 @@
 1git checkout &amp;lt;文件名&amp;gt;
 
 
-从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;">
-<meta property="og:updated_time" content="2017-04-29T03:40:12.000Z">
+从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;
+查看所有操作的版本号">
+<meta property="og:updated_time" content="2017-04-29T04:02:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git文件回滚">
 <meta name="twitter:description" content="跨过暂存区直接将本地文件提交到版本库如果执行过一次增加到版本库 git commit -a -m &amp;quot;更新内容描述&amp;quot;
@@ -120,7 +122,8 @@
 1git checkout &amp;lt;文件名&amp;gt;
 
 
-从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;">
+从版本库将文件某一版本回滚到暂存区和工作区1git reset --hard &amp;lt;版本号&amp;gt;
+查看所有操作的版本号">
 
 
 
@@ -432,6 +435,17 @@
 </li>
 </ul>
 <h2 id="从版本库将文件某一版本回滚到暂存区和工作区"><a href="#从版本库将文件某一版本回滚到暂存区和工作区" class="headerlink" title="从版本库将文件某一版本回滚到暂存区和工作区"></a>从版本库将文件某一版本回滚到暂存区和工作区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset --hard &lt;版本号&gt;</div></pre></td></tr></table></figure>
+<h2 id="查看所有操作的版本号"><a href="#查看所有操作的版本号" class="headerlink" title="查看所有操作的版本号"></a>查看所有操作的版本号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reflog</div></pre></td></tr></table></figure>
+<h2 id="搜索带有-lt-需要查询的关键字-gt-的版本号"><a href="#搜索带有-lt-需要查询的关键字-gt-的版本号" class="headerlink" title="搜索带有&lt;需要查询的关键字&gt;的版本号"></a>搜索带有&lt;需要查询的关键字&gt;的版本号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --grep=&lt;需要查询的关键字&gt;</div></pre></td></tr></table></figure>
+<h2 id="搜索-lt-作者-用户名-gt-提交的历史版本"><a href="#搜索-lt-作者-用户名-gt-提交的历史版本" class="headerlink" title="搜索&lt;作者/用户名&gt;提交的历史版本"></a>搜索&lt;作者/用户名&gt;提交的历史版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git log --author=&lt;作者/用户名&gt;</div></pre></td></tr></table></figure>
+<h2 id="加入暂存区后，返回上一次的添加-删除本次的-add"><a href="#加入暂存区后，返回上一次的添加-删除本次的-add" class="headerlink" title="加入暂存区后，返回上一次的添加 (删除本次的 add)"></a>加入暂存区后，返回上一次的添加 (删除本次的 <code>add</code>)</h2><ul>
+<li><p>返回指定文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD &lt;文件名&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>返回所有文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD .</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -476,9 +490,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
-          
             <a href="/tags/前端笔记/" rel="tag"># 前端笔记</a>
+          
+            <a href="/tags/git/" rel="tag"># git</a>
           
         </div>
       
@@ -661,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#跨过暂存区直接将本地文件提交到版本库"><span class="nav-number">1.</span> <span class="nav-text">跨过暂存区直接将本地文件提交到版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从暂存区拉取历史文件"><span class="nav-number">2.</span> <span class="nav-text">从暂存区拉取历史文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从版本库将文件某一版本回滚到暂存区和工作区"><span class="nav-number">3.</span> <span class="nav-text">从版本库将文件某一版本回滚到暂存区和工作区</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#跨过暂存区直接将本地文件提交到版本库"><span class="nav-number">1.</span> <span class="nav-text">跨过暂存区直接将本地文件提交到版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从暂存区拉取历史文件"><span class="nav-number">2.</span> <span class="nav-text">从暂存区拉取历史文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#从版本库将文件某一版本回滚到暂存区和工作区"><span class="nav-number">3.</span> <span class="nav-text">从版本库将文件某一版本回滚到暂存区和工作区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看所有操作的版本号"><span class="nav-number">4.</span> <span class="nav-text">查看所有操作的版本号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索带有-lt-需要查询的关键字-gt-的版本号"><span class="nav-number">5.</span> <span class="nav-text">搜索带有<需要查询的关键字>的版本号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索-lt-作者-用户名-gt-提交的历史版本"><span class="nav-number">6.</span> <span class="nav-text">搜索<作者/用户名>提交的历史版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加入暂存区后，返回上一次的添加-删除本次的-add"><span class="nav-number">7.</span> <span class="nav-text">加入暂存区后，返回上一次的添加 (删除本次的 add)</span></a></li></ol></div>
             
 
           </div>
