@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[git解决冲突]]></title>
+      <url>%2F2017%2F04%2F29%2Fgit%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%2F</url>
+      <content type="text"><![CDATA[处理冲突由于两个分支改变了相同的文件，但是文件内容不同，这时候需要手动吹，再次提交，就可以完成合并 模块化开发，可以降低冲突的发生 查看git提交图谱1git log --graph 通过上下方向键拉倒提交日志最低端，按Q键退出提交日志窗口。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git分支]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%E5%88%86%E6%94%AF%2F</url>
       <content type="text"><![CDATA[查看当前git分支1git branch 创建分支1git branch &lt;分支名&gt; 切换分支1git checkout &lt;分支名&gt; 删除分支注：删除分支之前一定确定要删除的分支，不是当前所在分支，切换其他分支之后即可删除1git branch -D &lt;分支名&gt; 创建并切换指定分支1git checkout -b &lt;分支名&gt; 分支合并 用主干分支合并分支注：默认master是主干1git merge &lt;分支名&gt; 合并分支后 被合并的分支删除即可]]></content>
