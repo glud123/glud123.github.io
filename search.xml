@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[git解决冲突]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%2F</url>
-      <content type="text"><![CDATA[处理冲突由于两个分支改变了相同的文件，但是文件内容不同，这时候需要手动吹，再次提交，就可以完成合并 模块化开发，可以降低冲突的发生 查看git提交图谱1git log --graph 通过上下方向键拉倒提交日志最低端，按Q键退出提交日志窗口。 github注册之后需要配置邮箱创建有内容的文件12echo &quot;重写的内容&quot; &gt; README.mdecho &quot;需要追加的内容&quot; &gt;&gt; README.md 本地仓库与远程仓库进行关联1git remot add 名字 地址 推送到远程仓库1234-u upstream 设置之后下次推送时可以使用简写git push origin master -u简写git push]]></content>
+      <content type="text"><![CDATA[处理冲突由于两个分支改变了相同的文件，但是文件内容不同，这时候需要手动吹，再次提交，就可以完成合并 模块化开发，可以降低冲突的发生 查看git提交图谱1git log --graph 通过上下方向键拉倒提交日志最低端，按Q键退出提交日志窗口。 github注册之后需要配置邮箱创建有内容的文件12echo &quot;重写的内容&quot; &gt; README.mdecho &quot;需要追加的内容&quot; &gt;&gt; README.md 本地仓库与远程仓库进行关联1git remote add &lt;名字&gt; &lt;地址&gt; 查看远程仓库的连接列表1git remote -v 删除远程仓库的连接1git remote &lt;连接名&gt; 推送到远程仓库-u 为upstream 设置之后下次推送时可以使用简写123git push origin master -u简写git push]]></content>
     </entry>
 
     
