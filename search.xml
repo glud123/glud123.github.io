@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[git发布静态网站]]></title>
+      <url>%2F2017%2F04%2F29%2Fgit%E5%8F%91%E5%B8%83%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%2F</url>
+      <content type="text"><![CDATA[在github上发布静态网站 必须在当前项目下建立一个gh-pages的分支 将我们需要发布的内容推送到gh-pages这个分支上 推送到远程仓库上即可 github会给你一个在线地址 执行步骤 git checkout -b gh-pages touch index.html git add . git commit -m “add index.html” git push origin gh-pages-在github中的setting页可以查找到网址+文件名即可（默认会展示index.html） 获取自己仓库的代码1git clone &lt;地址&gt;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git解决冲突]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%2F</url>
       <content type="text"><![CDATA[处理冲突由于两个分支改变了相同的文件，但是文件内容不同，这时候需要手动吹，再次提交，就可以完成合并 模块化开发，可以降低冲突的发生 查看git提交图谱1git log --graph 通过上下方向键拉倒提交日志最低端，按Q键退出提交日志窗口。 github注册之后需要配置邮箱创建有内容的文件12echo &quot;重写的内容&quot; &gt; README.mdecho &quot;需要追加的内容&quot; &gt;&gt; README.md 本地仓库与远程仓库进行关联1git remote add &lt;名字&gt; &lt;地址&gt; 查看远程仓库的连接列表1git remote -v 删除远程仓库的连接1git remote &lt;连接名&gt; 推送到远程仓库-u 为upstream 设置之后下次推送时可以使用简写123git push origin master -u简写git push]]></content>
@@ -33,7 +40,7 @@
     <entry>
       <title><![CDATA[git]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%2F</url>
-      <content type="text"><![CDATA[pwd print working directory 打印当前工作目录 告诉git当前用户 用git第一次需要配置 以后都不需要 123git config --global user.name &lt;your name&gt;git config --global user.email &lt;your email&gt;git config list 查看配置列表 初始化文件夹（告诉git那个文件夹归git所管理）1git init 打开文件夹1cd 删除文件夹 循环删除（递归删除）1rm -rf &lt;文件夹名&gt; 删除文件1rm &lt;文件名&gt; macOS中查看隐藏文件夹1ls -a 新建文件1touch &lt;文件名&gt; 查看文件名1cat &lt;文件名&gt; 编辑文件 进入vi编辑模式1vi &lt;文件名&gt; 在vi模式下 按 i 键 进入编辑模式 编辑文件 按 esc 键，退出编辑模式 :wq 保存并退出 :q! 强制退出，不保存 工作区进行提交到暂存区 提交全部1git add . 或者1git add -A 提交单个文件1git add &lt;文件名&gt; 暂存区提交到版本库1git commit -m &quot;更新内容描述&quot; 提交到版本库1git push 查看文件所在区的提交状态1git status]]></content>
+      <content type="text"><![CDATA[pwd print working directory 打印当前工作目录 告诉git当前用户 用git第一次需要配置 以后都不需要 123git config --global user.name &lt;your name&gt;git config --global user.email &lt;your email&gt;git config list 查看配置列表 初始化文件夹（告诉git那个文件夹归git所管理）1git init 打开文件夹1cd 删除文件夹 循环删除（递归删除）1rm -rf &lt;文件夹名&gt; 删除文件1rm &lt;文件名&gt; macOS中查看隐藏文件夹1ls -a 新建文件1touch &lt;文件名&gt; 查看文件名1cat &lt;文件名&gt; 编辑文件 进入vi编辑模式1vi &lt;文件名&gt; 在vi模式下 按 i 键 进入编辑模式 编辑文件 按 esc 键，退出编辑模式 :wq 保存并退出 :q! 强制退出，不保存 工作区进行提交到暂存区 提交全部 123git add .或者git add -A 提交单个文件 1git add &lt;文件名&gt; 暂存区提交到版本库1git commit -m &quot;更新内容描述&quot; 提交到版本库1git push 查看文件所在区的提交状态1git status]]></content>
     </entry>
 
     
