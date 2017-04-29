@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[git]]></title>
+      <url>%2F2017%2F04%2F29%2Fgit%2F</url>
+      <content type="text"><![CDATA[pwd print working directory 打印当前工作目录 告诉git当前用户 用git第一次需要配置 以后都不需要 123git config --global user.name &lt;your name&gt;git config --global user.email &lt;your email&gt;git config list 查看配置列表 初始化文件夹（告诉git那个文件夹归git所管理）1git init 打开文件夹1cd 删除.git文件 循环删除1rm -rf .git macOS中查看隐藏文件夹1ls -a 新建文件1touch &lt;文件名&gt; 查看文件名1cat &lt;文件名&gt; 编辑文件 进入vi编辑模式1vi &lt;文件名&gt; 在vi模式下 按 i 键 进入编辑模式 编辑文件 按 esc 键，退出编辑模式 :wq 保存并退出 :q! 强制退出，不保存]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[node-EventEmitter方法]]></title>
       <url>%2F2017%2F04%2F24%2Fnode-EventEmitter%E6%96%B9%E6%B3%95%2F</url>
       <content type="text"><![CDATA[EventEmitter方法 addListener(eventName,listener) 对指定事件绑定监听 on(enentName,listener) 对指定事件绑定监听同 addListener(eventName,listener) once(eventName,listener) 对指定事件仅绑定一次 removeListener(eventName，listener) 解除绑定监听 removeAllListener(eventName) 解除所有绑定的监听事件 emit(eventName,args) 触发事件第一个是事件类型 args是传入的参数]]></content>
