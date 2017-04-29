@@ -100,7 +100,7 @@
 
 123git config --global user.name &amp;lt;your name&amp;gt;git config --global user.email &amp;lt;your email&amp;gt;git config list 查看配置列表
 初始化文件夹（告诉g">
-<meta property="og:updated_time" content="2017-04-29T02:48:48.000Z">
+<meta property="og:updated_time" content="2017-04-29T02:59:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git">
 <meta name="twitter:description" content="pwd  print working directory 打印当前工作目录
@@ -430,6 +430,17 @@
 <li><code>:wq</code> 保存并退出</li>
 <li><code>:q!</code> 强制退出，不保存</li>
 </ul>
+<h2 id="工作区进行提交到暂存区"><a href="#工作区进行提交到暂存区" class="headerlink" title="工作区进行提交到暂存区"></a>工作区进行提交到暂存区</h2><ul>
+<li>提交全部<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add -A</div></pre></td></tr></table></figure></p>
+<ul>
+<li>提交单个文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add &lt;文件名&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="暂存区提交到版本库"><a href="#暂存区提交到版本库" class="headerlink" title="暂存区提交到版本库"></a>暂存区提交到版本库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m &quot;更新内容描述&quot;</div></pre></td></tr></table></figure>
+<h2 id="查看文件所在区的提交状态"><a href="#查看文件所在区的提交状态" class="headerlink" title="查看文件所在区的提交状态"></a>查看文件所在区的提交状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -659,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pwd"><span class="nav-number">1.</span> <span class="nav-text">pwd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#告诉git当前用户"><span class="nav-number">2.</span> <span class="nav-text">告诉git当前用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化文件夹（告诉git那个文件夹归git所管理）"><span class="nav-number">3.</span> <span class="nav-text">初始化文件夹（告诉git那个文件夹归git所管理）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开文件夹"><span class="nav-number">4.</span> <span class="nav-text">打开文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件夹-循环删除（递归删除）"><span class="nav-number">5.</span> <span class="nav-text">删除文件夹  循环删除（递归删除）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">6.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#macOS中查看隐藏文件夹"><span class="nav-number">7.</span> <span class="nav-text">macOS中查看隐藏文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文件"><span class="nav-number">8.</span> <span class="nav-text">新建文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看文件名"><span class="nav-number">9.</span> <span class="nav-text">查看文件名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文件-进入vi编辑模式"><span class="nav-number">10.</span> <span class="nav-text">编辑文件 进入vi编辑模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在vi模式下"><span class="nav-number">11.</span> <span class="nav-text">在vi模式下</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pwd"><span class="nav-number">1.</span> <span class="nav-text">pwd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#告诉git当前用户"><span class="nav-number">2.</span> <span class="nav-text">告诉git当前用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化文件夹（告诉git那个文件夹归git所管理）"><span class="nav-number">3.</span> <span class="nav-text">初始化文件夹（告诉git那个文件夹归git所管理）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开文件夹"><span class="nav-number">4.</span> <span class="nav-text">打开文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件夹-循环删除（递归删除）"><span class="nav-number">5.</span> <span class="nav-text">删除文件夹  循环删除（递归删除）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">6.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#macOS中查看隐藏文件夹"><span class="nav-number">7.</span> <span class="nav-text">macOS中查看隐藏文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文件"><span class="nav-number">8.</span> <span class="nav-text">新建文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看文件名"><span class="nav-number">9.</span> <span class="nav-text">查看文件名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文件-进入vi编辑模式"><span class="nav-number">10.</span> <span class="nav-text">编辑文件 进入vi编辑模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在vi模式下"><span class="nav-number">11.</span> <span class="nav-text">在vi模式下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区进行提交到暂存区"><span class="nav-number">12.</span> <span class="nav-text">工作区进行提交到暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暂存区提交到版本库"><span class="nav-number">13.</span> <span class="nav-text">暂存区提交到版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看文件所在区的提交状态"><span class="nav-number">14.</span> <span class="nav-text">查看文件所在区的提交状态</span></a></li></ol></div>
             
 
           </div>
