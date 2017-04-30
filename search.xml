@@ -3,6 +3,55 @@
   
     
     <entry>
+      <title><![CDATA[hexo安装]]></title>
+      <url>%2F2017%2F04%2F30%2Fhexo%E5%AE%89%E8%A3%85%2F</url>
+      <content type="text"><![CDATA[下载hexo脚手架工具1npm install hexo-cli -g 下载后可以在命令行下生成一个全局命令hexo 初始化博客1hexo init &lt;博客文件夹名&gt; 进入博客文件夹1cd &lt;博客文件夹名&gt; 启动hexo本地服务1hexo server 默认端口号为4000，如果端口被占用可以使用 1hexo server -p &lt;端口号&gt;]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[node发布与订阅-观察者模式]]></title>
+      <url>%2F2017%2F04%2F30%2Fnode%E5%8F%91%E5%B8%83%E4%B8%8E%E8%AE%A2%E9%98%85%2F</url>
+      <content type="text"><![CDATA[发布订阅模式 一种一对多的关系，订阅事件和发布事件 {‘水开了’:[‘泡面’,’洗澡’]} 绑定事件 on维护一个一对多的关系{“被监听的事件名”:[事件1,事件2,事件3]} 发射事件 emit当触发事件后会将绑定的事件依次触发通过发射的事件名，将数组里面的参数依次执行]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[发布node模块包]]></title>
+      <url>%2F2017%2F04%2F30%2F%E5%8F%91%E5%B8%83node%E6%A8%A1%E5%9D%97%E5%8C%85%2F</url>
+      <content type="text"><![CDATA[发布自己的包 多个js文件组成的就叫包 通常都存在一个入口文件 发布这个文件夹（发布的包不能和已经存在的包相同） 包中必须要有package.json文件 向npm官网发包 切换到官方npm 1nrm use npm 如果有账号表示登录，没有账号表示新建账号 1npm addUser 发布 1npm publish 删除模块 1npm unpublish &lt;模块名&gt;@&lt;版本号&gt; 查询是否登录过 1npm whoami 使用idoc进行文档展示 安装idoc1npm install idoc -g]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[node核心模块]]></title>
+      <url>%2F2017%2F04%2F30%2Fnode%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%2F</url>
+      <content type="text"><![CDATA[核心模块引用核心模块不需要安装，也不需要使用./或者../来引入 util模块util 最主要的功能是继承，判断类型 js中的继承call，原型继承，new，extends Obj.create() es5的继承 只继承公有1Sun.prototype = Obj.create(Parent.prototype) Object.setPrototypeOf() es6只继承公有1Object.setPrototypeOf(Sun.prototype,Parent.prototype); 原理Sun.prototype.proto = Parent.prototype call 只继承私有属性 Sun.prototype = new Parent() 可以继承公有和私有的方法 缺点不能传递参数 Sun.prototype.proto = Parent.prototype 通过原型链连接父亲的原型 util.inherits(Child,Parent); //node中的继承（继承公有属性） events模块常用的包括 on，emit，once，removeListener，removeAllListener]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[node模块安装]]></title>
+      <url>%2F2017%2F04%2F30%2Fnode%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%2F</url>
+      <content type="text"><![CDATA[模块 文件模块 内置模块 第三方模块模块安装 npm root -g 可以查看安装到哪里去了 全局安装 -g 在命令行下使用 nrm 切换源的工具 默认下载从官方下载npm，nrm可以切换国内数据源 全局安装nrm 1npm install -g nrm 列出所有可用的源 1nrm ls 测试源的速度 1nrm test 添加数据源 1nrm add &lt;源名字&gt; &lt;地址&gt; // 删除数据源 1nrm del &lt;源名字&gt; // 使用数据源 1nrm use &lt;源名字&gt; // 本地安装 （如果切换到淘宝后，以后都是通过淘宝进行安装） 本地安装主要在项目中使用 本地安装会默认安装到node_modules 中,如果没有初始化package.json可能会安装上一node_modules目录 123npm init -ynpm install jquery --save //安装npm uninstall jquery --save //卸载 项目依赖 上线需要开发时也需要 mime1--save 可以简写 -S 开发依赖 上线不需要，开发时需要 webpack gulp1--save-dev 可以简写 -D 安装依赖 当我们文件上传到github上，会node_module文件忽略掉，别人下载代码后需要执行npm install 将所有依赖进行安装1npm install 安装指定版本1npm install &lt;依赖名&gt;@版本号 查看指定版本号1npm info &lt;依赖名&gt; yarn 也是安装模块的方式，和npm一样。 1npm install yarn -g 初始化package.json 1yarn init -y 安装模块如果是项目依赖则不用标注，如果是开发依赖需要标注（-dev） 12yarn add &lt;依赖名&gt; //项目依赖yarn add &lt;依赖名&gt; -dev //开发依赖 删除模块 1yarn remove &lt;依赖名&gt; （-dev） 找回模块 1yarn install]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[node基础（一）]]></title>
+      <url>%2F2017%2F04%2F30%2Fnode%E5%9F%BA%E7%A1%80%2F</url>
+      <content type="text"><![CDATA[node 默认执行一个‘文件’ 时，就会套一层闭包函数，所有代码都是在个函数中执行的，默认这个函数提供5个参数，这五个参数可以直接使用，不用声明可以直接使用exports,require,module,__filename,dirname 1.process 进程对象 2.Buffer 缓冲区，表示内存中的数据（16进制） 3.clearImmediate , setImmediate 4.clearInterval , setInterval 5.clearTimeout , setTimeout 6.console console 顺序不定的 console.log(‘log’); console.error(‘error’); console.warn(‘warn’); console.info(‘info’); setTimeout 异步 (1)这里的this是setTimeout 自己console.log(this);//这里的this被外层的闭包改掉了，是个{}(function(){console.log(this);})();//这里的this是global 改变this指向的方式 1.call apply 2.bind 3.var that = this; 4.arrow func 即箭头函数 (2)setTimeout(function(参数1,参数2){console.log(参数1，参数2);},1000,’参数1’,’参数2’)； 高阶函数 let a = b =&gt; c =&gt; b + c;console.log(a(2)(3)); //5]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[node同步与异步]]></title>
+      <url>%2F2017%2F04%2F30%2Fnode%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5%2F</url>
+      <content type="text"><![CDATA[同步与异步node中异步包括： setTimeout callback process setImmediate setInterval 阻塞非阻塞针对的内核，厨师，如果厨师不释放掉服务员，主线程不可能异步 非阻塞是异步的前置条件 主线是单线程的，内核是多线程 单线程&amp;多线程 一个个发短信 群发短信多线程 进程包括线程，在node中一个进程只能包括一个线程，node可以多开多个线程，开多个进程（子进程） 事件循环 事件驱动]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git发布静态网站]]></title>
       <url>%2F2017%2F04%2F29%2Fgit%E5%8F%91%E5%B8%83%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%2F</url>
       <content type="text"><![CDATA[在github上发布静态网站 必须在当前项目下建立一个gh-pages的分支 将我们需要发布的内容推送到gh-pages这个分支上 推送到远程仓库上即可 github会给你一个在线地址 执行步骤 git checkout -b gh-pages touch index.html git add . git commit -m “add index.html” git push origin gh-pages-在github中的setting页可以查找到网址+文件名即可（默认会展示index.html） 获取自己仓库的代码1git clone &lt;地址&gt;]]></content>
