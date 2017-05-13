@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[express框架使用]]></title>
+      <url>%2F2017%2F05%2F13%2Fexpress%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%2F</url>
+      <content type="text"><![CDATA[express 是后台框架帮我们解决手动搭建服务，处理逻辑的复杂12npm init -ynpm install express --save 使用postman模拟数据发送https://www.getpostman.com/ 测试接口是否可用 路由根据请求的方法和请求的路径返回不同的内容12app.方法(&apos;路径&apos;,callback)app.all(&apos;*&apos;,callback) 匹配路由从上到下匹配，匹配成功后不继续向下执行 express提供的属性1234req.pathreq.queryreq.methodreq.headers 路径参数params :id表示站位必须要有1app.get(&apos;/user/:id&apos;,callback) 中间件中间件一般在路由上面写，错误中间件一般写在底部 扩展属性和方法，请求时中间件的res和req与路由中的是同一个 做权限处理，next可以决定是否向下执行 中间件可以写多个，和路由在同一个数组中12app.use(&apos;/&apos;,function(req,res,next)&#123;&#125;)next();//表示是否向下执行 默认不写路径任何请求都能执行]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hexo发布]]></title>
       <url>%2F2017%2F04%2F30%2Fhexo%E5%8F%91%E5%B8%83%2F</url>
       <content type="text"><![CDATA[发布hexo发布到github上一个账号只能发布一次，创建新的github库名字必须是&lt;github用户名&gt;.github.io 配置到github在_config.yml中找到deploy中添加一下内容1234deploy: type: git repository: https://github.com/&lt;github用户名&gt;/&lt;github用户名&gt;.github.io.git branch: master 下载发布插件1npm install hexo-deployer-git --save 发布12hexo g //生成静态页hexo d //发布博客]]></content>
