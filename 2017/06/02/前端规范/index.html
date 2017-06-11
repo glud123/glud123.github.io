@@ -1,0 +1,1122 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="前端,基础," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="web前端规范文档规范目的
+使开发流程更加规范
+
+通用规范
+
+TAB键使用两个空格代替（WINDOW 下TAB键占四个空格，LINUX 下TAB键占八个空格）。
+CSS 样式属性或者JavaScript代码后加 “ ; ” 方便压缩工具 “断句”。
+文件内容编码统一为UTF-8。
+CSS、JavaScript 中的非注释类中文字符必须转换成Unicode编码使用，以避免编码错误时乱码显示。
+
+
+文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web前端规范">
+<meta property="og:url" content="https://glud123.github.io/2017/06/02/前端规范/index.html">
+<meta property="og:site_name" content="闲下来">
+<meta property="og:description" content="web前端规范文档规范目的
+使开发流程更加规范
+
+通用规范
+
+TAB键使用两个空格代替（WINDOW 下TAB键占四个空格，LINUX 下TAB键占八个空格）。
+CSS 样式属性或者JavaScript代码后加 “ ; ” 方便压缩工具 “断句”。
+文件内容编码统一为UTF-8。
+CSS、JavaScript 中的非注释类中文字符必须转换成Unicode编码使用，以避免编码错误时乱码显示。
+
+
+文">
+<meta property="og:updated_time" content="2017-06-11T16:03:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web前端规范">
+<meta name="twitter:description" content="web前端规范文档规范目的
+使开发流程更加规范
+
+通用规范
+
+TAB键使用两个空格代替（WINDOW 下TAB键占四个空格，LINUX 下TAB键占八个空格）。
+CSS 样式属性或者JavaScript代码后加 “ ; ” 方便压缩工具 “断句”。
+文件内容编码统一为UTF-8。
+CSS、JavaScript 中的非注释类中文字符必须转换成Unicode编码使用，以避免编码错误时乱码显示。
+
+
+文">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://glud123.github.io/2017/06/02/前端规范/"/>
+
+
+
+
+
+  <title> web前端规范 | 闲下来 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">闲下来</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">Do or Die</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://glud123.github.io/2017/06/02/前端规范/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="GLUD">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/mylogo.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="闲下来">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="闲下来" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                web前端规范
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-02T10:32:42+08:00">
+                2017-06-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/规范/" itemprop="url" rel="index">
+                    <span itemprop="name">规范</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/06/02/前端规范/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/02/前端规范/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="web前端规范文档"><a href="#web前端规范文档" class="headerlink" title="web前端规范文档"></a>web前端规范文档</h2><h3 id="规范目的"><a href="#规范目的" class="headerlink" title="规范目的"></a>规范目的</h3><blockquote>
+<p>使开发流程更加规范</p>
+</blockquote>
+<h3 id="通用规范"><a href="#通用规范" class="headerlink" title="通用规范"></a>通用规范</h3><blockquote>
+<ul>
+<li>TAB键使用两个空格代替（WINDOW 下TAB键占四个空格，LINUX 下TAB键占八个空格）。</li>
+<li>CSS 样式属性或者JavaScript代码后加 “ ; ” 方便压缩工具 “断句”。</li>
+<li>文件内容编码统一为UTF-8。</li>
+<li>CSS、JavaScript 中的非注释类中文字符必须转换成Unicode编码使用，以避免编码错误时乱码显示。</li>
+</ul>
+</blockquote>
+<h3 id="文件规范"><a href="#文件规范" class="headerlink" title="文件规范"></a>文件规范</h3><blockquote>
+<ul>
+<li>文件名用英文单词，多个单词使用驼峰命名法。</li>
+<li>一些浏览器会将含有这些词的作为广告拦截，文件名、ID、CLASS等所有命名避免以下词汇。  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ad 、 ads 、 adv 、 banner 、 sponsor 、 gg 、 guangg 、 guanggao 等</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="HTML书写规范"><a href="#HTML书写规范" class="headerlink" title="HTML书写规范"></a>HTML书写规范</h3><ul>
+<li><p>为每一个html页面的第一行添加标准模式（standard mode）的声明，确保在每个浏览器中拥有一致的表现。<br>文档类型声明统一为HTML5声明类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>字符编码<br>通过明确声明字符编码，能够确保浏览器快速容易的判断页面内容的渲染方式。这样做的好处是，可以避免在HTML中使用字符实体标记（character entity），从而全部与文档编码一致（约定一致采用UTF-8）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>IE兼容模式<br>IE支持通过特定的<meta>标签来确定绘制当前页面所应该采用的IE版本。除非有强烈的特殊需求，否则最好设置为 edge mode ，从而通知IE采用其所支持的最新的模式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot; /&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>元素</p>
+</li>
+</ul>
+<ol>
+<li><p>HTML5元素</p>
+<ul>
+<li>section 表示文档中的节、区段，可以和 h1 - h6 一起来显示文档结构。</li>
+<li>article 表示一块比较独立的内容或者主题内容，块级元素，比如 blog 的内容，报纸的文章。</li>
+<li>aside 表示 article 以外的内容，而且应该和 article 有一定的关系，块级元素。</li>
+<li>hgroup 表示一个文档、区段（ section ）的标题组合。</li>
+<li>header 表示页眉，页头。</li>
+<li>footer 表示页脚。</li>
+<li>nav 表示导航。</li>
+<li>figure 表示以相对独立的或外引的元素，如 img 、 video 。</li>
+<li>figcaption 表示 figure 内容的标题。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;!-- hgroup 示例 --&gt;</div><div class="line">&lt;hgroup&gt;</div><div class="line">  &lt;h1&gt;文档主标题&lt;/h1&gt;</div><div class="line">  &lt;h2&gt;文档副标题&lt;/h2&gt;</div><div class="line">&lt;/hgroup&gt;</div><div class="line"></div><div class="line">&lt;!-- figure 示例 --&gt;</div><div class="line">&lt;figure&gt;</div><div class="line">  &lt;video src=&quot;mp4&quot;&gt;&lt;/video&gt;</div><div class="line">  &lt;figcaption&gt;示例&lt;/figcaption&gt;</div><div class="line">&lt;/figure&gt;</div><div class="line"></div><div class="line">&lt;figure&gt;</div><div class="line">  &lt;img src=&quot;img&quot; alt=&quot;示例图片&quot; /&gt;</div><div class="line">  &lt;figcaption&gt;示例&lt;/figcaption&gt;</div><div class="line">&lt;/figure&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>结构性元素</p>
+<ul>
+<li>p 表示段落。只能包含内联元素，不能包含块级元素。</li>
+<li>div 本身无特殊含义，可用于布局。几乎可以包含任何元素。</li>
+<li>br 表示换行符。</li>
+<li>hr 表示水平分割线。</li>
+<li>h1 - h6 表示标题。其中 h1 用于表示当前页面最重要的内容的标题。</li>
+<li>blockquote 表示引用，可以包含多个段落。请勿纯粹为了缩进进而使用 blockquote ，大部分浏览器默认将 blockquote 渲染为带有左右缩进。</li>
+<li>pre 表示一段格式化好的文本。</li>
+</ul>
+</li>
+<li><p>头部元素</p>
+<ul>
+<li>title 每个页面必须有且仅有一个 title 元素。</li>
+<li>base 可用场景：首页、频道等大部分连接都为新窗口打开的页面。</li>
+<li>link link 用于引入 css 资源时，可省去 media （默认为 all ）和 type （默认为 text/css ）属性。</li>
+<li>style type 默认为 text/css ，可以省去。</li>
+<li>script type 属性可以省去。不赞成使用 lang 属性。</li>
+<li>noscript 在用户代理不支持 JavaScript 的情况下提供说明。</li>
+</ul>
+</li>
+<li><p>文本元素</p>
+<ul>
+<li>a 存在 href 属性时表示链接，无 href 属性但有 name 属性表示锚点。</li>
+<li>em / strong em 表示句意强调，加与不加会引起语义变化，可用于表示不同的心情或者语调；strong 表示重要性强调，可用于局部或全局，strong 强调的是重要性，不会改变句意。</li>
+<li>abbr 表示缩写。</li>
+<li>sub/sup 主要用于数学和化学公式，sup 还可用于脚注。</li>
+<li>span 本身无特殊含义。</li>
+<li>ins/del 分别表示从文档中增加（插入）和删除。</li>
+</ul>
+</li>
+<li><p>媒体元素</p>
+<ul>
+<li>img 请勿将img元素作为定位布局的工具，其中的 src 属性必须赋值，必要时给 img 元素增加 alt 属性。</li>
+<li>object 可以用来插入 Flash 。</li>
+</ul>
+</li>
+<li><p>列表元素</p>
+<ul>
+<li>dl 表示关联列表，dd 是对 dt 的解释，dt 和 dd 的对应关系比较随意，一个 dt 对应多个 dd 、多个 dt 对应一个 dd ，都合法。可用于名词/单词解释、日程列表、站点目录。</li>
+<li>ul 表示无序列表。</li>
+<li>ol 表示有序列表，可用于排行榜等。</li>
+<li>li 表示列表项，必须是 ul / ol 的子元素。</li>
+</ul>
+</li>
+<li><p>表单元素</p>
+<ul>
+<li>推荐使用 button 代替 input, 但必须声明 type 。</li>
+<li>表单元素的 name 不能设定为 action , enctype , method , novalidate , target , submit 会导致表单提交混乱。</li>
+</ul>
+</li>
+</ol>
+<h4 id="属性顺序"><a href="#属性顺序" class="headerlink" title="属性顺序"></a>属性顺序</h4><ol>
+<li>HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读性。<ul>
+<li>CLASS</li>
+<li>ID 、name</li>
+<li>data-*</li>
+<li>src 、 for 、 type 、href</li>
+<li>title 、alt</li>
+<li>aria-* 、 role</li>
+</ul>
+</li>
+<li>CLASS 用于标识高度可复用组件，因此应该排在首位。 ID 用于标识具体组件，应当谨慎使用（例如，页面内的书签），因此排在第二位。如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;a class=&quot;...&quot; id=&quot;...&quot; data-modal=&quot;toggle&quot; href=&quot;#&quot;&gt;示例&lt;/a&gt;</div><div class="line">&lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;</div><div class="line">&lt;img src=&quot;img&quot; alt=&quot;...&quot;&gt;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="文件和目录命名约定"><a href="#文件和目录命名约定" class="headerlink" title="文件和目录命名约定"></a>文件和目录命名约定</h4><ol>
+<li>一律小写，必须是英文单词或者汉语拼音，以英语单词优先，多个单词以连字符（ - ）连接。只能出现小写英文字母，数字和连字符。</li>
+<li>很多浏览器会将含有这些词的作为广告拦截：ad 、ads 、 adv 、 banner 、 sponsor 、 gg 、guangg 、guanggao 等 页面中尽量避免采用以上词汇来命名。</li>
+<li>该命令规范适用于所有前端维护的内容和相关目录。（ html 、css 、js 、png 、 gif 、jpg 、ico）。</li>
+</ol>
+<h4 id="空格-标签-注释"><a href="#空格-标签-注释" class="headerlink" title="空格/标签/注释"></a>空格/标签/注释</h4><ol>
+<li>用两个空格来代替制表符（tab）– 这是唯一能保证在所有环境下获得一致展现的方法。</li>
+<li>嵌套元素应当缩进依次 – 即两个空格。</li>
+<li>对于属性的定义，确保全部使用双引号，绝不要使用单引号。</li>
+<li>不要省略可选的结束标签，如：</li> ,  。
+<li>习惯性书写注释，方便日后维护。</li>
+</ol>
+<h4 id="文件编码约定"><a href="#文件编码约定" class="headerlink" title="文件编码约定"></a>文件编码约定</h4><p>所有文件统一采用 UTF-8 无 BOM 编码。换行格式为 unix 格式。</p>
+<h4 id="id-和-class-命名约定"><a href="#id-和-class-命名约定" class="headerlink" title="id 和 class 命名约定"></a>id 和 class 命名约定</h4><ol>
+<li>id 和 class 的命名基本原则：内容优先，表现为辅。首先根据内容来命名，如：<code>#header</code> , <code>#footer</code> , <code>.main-nav</code> 如根据内容无法找到合适的命名，可以在结合表现进行命名，如：<code>col-main</code> , <code>col-sub</code> , <code>col-extra</code> , <code>blue-box</code></li>
+<li>id 和 class 的名称一律小写，多个单词以连接字符连接，如： <code>main-wrap</code></li>
+<li>id 和 class 的名称只能出现，小写字母，数字和连字符( - ) ( js 钩子除外)</li>
+<li>id 和 class 的名称尽量使用英文单词命名，如确实找不到合适的单词，可以使用拼音，如：<code>zhidao-com</code></li>
+<li>在不影响语意的情况下，id 和 class 的名称可以适当使用缩写，如：<code>col</code> , <code>nav</code> , <code>hd</code> , <code>bd</code> , <code>fd</code> （ 缩写只用来表示结构，不允许写任何样式 ）。不要自造缩写。</li>
+<li>class 对于选中命名 <code>.selected</code> ；对于 <code>:hover</code> ，不支持的使用 <code>.hover</code> ，隐藏使用 <code>.hide</code>。</li>
+<li>id 和 class 的选择，如果只是用一次，使用 id ，如果使用多次使用 class ，如果需要和 js 交互，使用 id ，如果需要交互并且页面中有大量重复，请参见下一条。</li>
+<li>对于作为 js 钩子的 id 和 class 命名规则以 “J_”开头（ J ，象形钩子的形状 ），后面加上应有的命名，在使用 class 的时候需要放在最前面。如：<code>class=&quot;J_tab-content some-mod-content&quot;</code>。（注意：钩子，不允许在 css 中定义任何的样式效果 ）。</li>
+<li>很多浏览器会将含有这些词的作为广告拦截：<code>ad</code> 、<code>ads</code> 、 <code>adv</code> 、 <code>banner</code> 、 <code>sponsor</code> 、 <code>gg</code> 、 <code>guangg</code> 、 <code>guanggao</code>等 页面中尽量避免采用以上词汇来命名。</li>
+</ol>
+<h4 id="文件引用"><a href="#文件引用" class="headerlink" title="文件引用"></a>文件引用</h4><ol>
+<li>页面中不允许出现 css 内容（ 包括行内样式和 style ）。</li>
+<li>每个页面中至多包括3个 css 文件，1个产品级1个模块级1个页面级别。</li>
+</ol>
+<h4 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h4><ol>
+<li>命名比较短的词，或者缩写的不允许直接定义样式，如：<code>.title</code> , <code>.hd</code> , <code>.bd</code> ,<code>.body</code>必须用上级节点进行限定，如：<code>.recommend-mod .title</code>。</li>
+</ol>
+<h4 id="通用结构"><a href="#通用结构" class="headerlink" title="通用结构"></a>通用结构</h4><ol>
+<li>页面中的块采用如下结构<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;mod recommend-mod&quot;&gt;</div><div class="line">  &lt;div class=&quot;hd recommend-title&quot;&gt;Title&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;bd recommend-body&quot;&gt;contents&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;ft recommend-footer&quot;&gt;footer&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>没有内容的部分可以省略，其中用来表示结构的 <code>mod</code> 、<code>hd</code> 、<code>bd</code> 、 <code>ft</code>不允许直接定义样式（避免嵌套带来样式问题），需要定义样式的时候需要另外增加 class 以控制样式如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;mod recommend-mod&quot;&gt;</div><div class="line">  &lt;div class=&quot;hd recommend-title&quot;&gt;Title&lt;/div</div><div class="line">  &lt;div class=&quot;bd recommend-body&quot;&gt;contents&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;ft recommend-footer&quot;&gt;footer&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>当两个以上的结构不存在的时候可以不采用此结构，如：没有 hd 和 ft ， bd 也可以省略。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://okvwvkb2y.bkt.clouddn.com/weixinqr.png" alt="GLUD WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://okvwvkb2y.bkt.clouddn.com/zhifubaoqr.jpg" alt="GLUD Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+            <a href="/tags/基础/" rel="tag"># 基础</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/14/express中cookie-session/" rel="next" title="express中cookie/session">
+                <i class="fa fa-chevron-left"></i> express中cookie/session
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/06/02/前端规范/"
+     data-title="web前端规范"
+     data-content=""
+     data-url="https://glud123.github.io/2017/06/02/前端规范/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/06/02/前端规范/"
+           data-title="web前端规范" data-url="https://glud123.github.io/2017/06/02/前端规范/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/mylogo.jpg"
+               alt="GLUD" />
+          <p class="site-author-name" itemprop="name">GLUD</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/glud123" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/glud16" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#web前端规范文档"><span class="nav-number">1.</span> <span class="nav-text">web前端规范文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规范目的"><span class="nav-number">1.1.</span> <span class="nav-text">规范目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通用规范"><span class="nav-number">1.2.</span> <span class="nav-text">通用规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件规范"><span class="nav-number">1.3.</span> <span class="nav-text">文件规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML书写规范"><span class="nav-number">1.4.</span> <span class="nav-text">HTML书写规范</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性顺序"><span class="nav-number">1.4.1.</span> <span class="nav-text">属性顺序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件和目录命名约定"><span class="nav-number">1.4.2.</span> <span class="nav-text">文件和目录命名约定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空格-标签-注释"><span class="nav-number">1.4.3.</span> <span class="nav-text">空格/标签/注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件编码约定"><span class="nav-number">1.4.4.</span> <span class="nav-text">文件编码约定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#id-和-class-命名约定"><span class="nav-number">1.4.5.</span> <span class="nav-text">id 和 class 命名约定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文件引用"><span class="nav-number">1.4.6.</span> <span class="nav-text">文件引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择器"><span class="nav-number">1.4.7.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通用结构"><span class="nav-number">1.4.8.</span> <span class="nav-text">通用结构</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GLUD</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"GLUD"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
