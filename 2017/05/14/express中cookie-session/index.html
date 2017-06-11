@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://glud123.github.io/2017/05/14/express中cookie-session/index.html">
 <meta property="og:site_name" content="闲下来">
 <meta property="og:description" content="body-parser解析请求体的会将请求的数据挂载在req.body上1234npm install body-parser --savelet bodyParser = require(&amp;apos;body-parser&amp;apos;);app.use(bodyParser.json());//解析jsonapp.use(bodyParser.urlencoded(&amp;#123;extended:">
-<meta property="og:updated_time" content="2017-05-15T13:54:59.000Z">
+<meta property="og:updated_time" content="2017-06-11T16:07:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="express中cookie/session">
 <meta name="twitter:description" content="body-parser解析请求体的会将请求的数据挂载在req.body上1234npm install body-parser --savelet bodyParser = require(&amp;apos;body-parser&amp;apos;);app.use(bodyParser.json());//解析jsonapp.use(bodyParser.urlencoded(&amp;#123;extended:">
@@ -398,6 +398,7 @@
         <h2 id="body-parser"><a href="#body-parser" class="headerlink" title="body-parser"></a>body-parser</h2><p>解析请求体的会将请求的数据挂载在req.body上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install body-parser --save</div><div class="line">let bodyParser = require(&apos;body-parser&apos;);</div><div class="line">app.use(bodyParser.json());//解析json</div><div class="line">app.use(bodyParser.urlencoded(&#123;extended:false&#125;));//解析formData的格式</div></pre></td></tr></table></figure></p>
 <h2 id="querystring的核心模块"><a href="#querystring的核心模块" class="headerlink" title="querystring的核心模块"></a>querystring的核心模块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">let querystring = require(&apos;querystring&apos;);</div><div class="line">querystring.parse(&apos;name=1&amp;age=2&apos;,&apos;&amp;&apos;,&apos;=&apos;);</div><div class="line">querystring.stringify(&#123;name:1,age:2&#125;,&apos;&amp;&amp;&apos;,&apos;=&apos;);</div></pre></td></tr></table></figure>
 <h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install cookie-parser --save</div><div class="line">let cookieParser = require(&apos;cookie-parser&apos;);</div><div class="line">app.use(cookieParser());</div><div class="line">req.cookies //可以直接获取cookie转换后的对象</div><div class="line">req.cookie(key,value,&#123;domain,path,expires,maxAge,httpOnly&#125;);</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="session"><a href="#session" class="headerlink" title="session"></a>session</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install express-session --save</div><div class="line">let session = require(&apos;express-session&apos;);</div></pre></td></tr></table></figure>
 
       
